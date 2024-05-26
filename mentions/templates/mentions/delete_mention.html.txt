@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Supprimer la Mention</title>
+</head>
+<body>
+    <h1>Supprimer la Mention</h1>
+    <p>Êtes-vous sûr de vouloir supprimer la mention "{{ mention.contenu }}" ?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Confirmer la Suppression</button>
+    </form>
+</body>
+</html>

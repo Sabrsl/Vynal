@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Liste des Mentions{% endblock %}
+
+{% block content %}
+    <h1>Liste des Mentions</h1>
+    {% for mention in mentions %}
+        <p>{{ mention.contenu }}</p>
+        <p>Source: {{ mention.source }}</p>
+        <p>Lien: <a href="{{ mention.lien }}">{{ mention.lien }}</a></p>
+        <p>Sentiment: {{ mention.sentiment }}</p>
+        <hr>
+    {% empty %}
+        <p>Aucune mention disponible pour le moment.</p>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,20 @@
+<!-- C:\Users\sabrs\Desktop\Vynal\vynal-web\vynal_backend\templates\home.html -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+</head>
+<body>
+    <h1>Bienvenue sur la page d'accueil</h1>
+    <p>Ceci est la page d'accueil de votre application Django.</p>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Liste des mentions</a></li>
+            <li><a href="{% url 'create_mention' %}">Créer une mention</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Supprimer la Mention</title>
+</head>
+<body>
+    <h1>Supprimer la Mention</h1>
+    <p>Êtes-vous sûr de vouloir supprimer cette mention ?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Supprimer</button>
+    </form>
+    <a href="{% url 'mention_detail' mention.id %}">Annuler</a>
+</body>
+</html>

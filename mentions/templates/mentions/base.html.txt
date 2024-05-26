@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Titre de la Page{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <!-- Barre de Navigation ou En-tête -->
+        <h1>Mon Application de Mentions</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Accueil</a></li>
+                <!-- Autres liens de navigation ici -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contenu Specifique à Chaque Page -->
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <!-- Pied de Page -->
+        <p>&copy; 2024 Mon Application de Mentions</p>
+    </footer>
+</body>
+</html>

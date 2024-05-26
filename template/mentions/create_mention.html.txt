@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Creer une Mention</title>
+</head>
+<body>
+    <h1>Creer une nouvelle Mention</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="contenu">Contenu :</label>
+        <textarea id="contenu" name="contenu" required></textarea>
+        <label for="source">Source :</label>
+        <input type="text" id="source" name="source" required>
+        <label for="lien">Lien :</label>
+        <input type="url" id="lien" name="lien">
+        <button type="submit">Creer</button>
+    </form>
+    <a href="{% url 'index' %}">Annuler</a>
+</body>
+</html>

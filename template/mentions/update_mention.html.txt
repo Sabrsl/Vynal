@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Modifier la Mention</title>
+</head>
+<body>
+    <h1>Modifier la Mention</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="contenu">Contenu :</label>
+        <textarea id="contenu" name="contenu" required>{{ mention.contenu }}</textarea>
+        <label for="source">Source :</label>
+        <input type="text" id="source" name="source" value="{{ mention.source }}" required>
+        <label for="lien">Lien :</label>
+        <input type="url" id="lien" name="lien" value="{{ mention.lien }}">
+        <button type="submit">Mettre à jour</button>
+    </form>
+    <a href="{% url 'mention_detail' mention.id %}">Annuler</a>
+</body>
+</html>

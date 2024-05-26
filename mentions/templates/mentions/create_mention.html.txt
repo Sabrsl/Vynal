@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Creer une Mention</title>
+</head>
+<body>
+    <h1>Creer une Mention</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="contenu">Contenu:</label><br>
+        <textarea id="contenu" name="contenu"></textarea><br>
+        <label for="source">Source:</label><br>
+        <input type="text" id="source" name="source"><br>
+        <label for="lien">Lien:</label><br>
+        <input type="text" id="lien" name="lien"><br>
+        <button type="submit">Enregistrer</button>
+    </form>
+</body>
+</html>

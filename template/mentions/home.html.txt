@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil - Vynal</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur Vynal</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Liste des mentions</a></li>
+                <li><a href="{% url 'create_mention' %}">Créer une mention</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Cette application vous permet de gérer des mentions.</p>
+        <p>Utilisez les liens ci-dessus pour naviguer vers d'autres pages.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Vynal. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

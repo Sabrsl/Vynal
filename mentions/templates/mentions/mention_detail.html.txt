@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Details de la Mention</title>
+</head>
+<body>
+    <h1>Details de la Mention</h1>
+    <p>Contenu: {{ mention.contenu }}</p>
+    <p>Source: {{ mention.source }}</p>
+    <p>Lien: <a href="{{ mention.lien }}">{{ mention.lien }}</a></p>
+    <p>Sentiment: {{ mention.sentiment }}</p>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!-- templates/mentions/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des mentions</title>
+</head>
+<body>
+    <h1>Liste des mentions</h1>
+    <ul>
+        {% for mention in mentions %}
+            <li><a href="{% url 'mention_detail' mention.id %}">{{ mention.contenu }}</a> - {{ mention.sentiment }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page non trouvee</title>
+</head>
+<body>
+    <h1>Erreur 404 : Page non trouvee</h1>
+    <p>Desole, la page que vous recherchez n'existe pas.</p>
+    <a href="{% url 'index' %}">Retour à l'accueil</a>
+</body>
+</html>

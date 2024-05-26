@@ -1,0 +1,16 @@
+<!-- templates/mentions/mention_detail.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Details de la mention</title>
+</head>
+<body>
+    <h1>Details de la mention</h1>
+    <p>Contenu : {{ mention.contenu }}</p>
+    <p>Date de creation : {{ mention.date_creation }}</p>
+    <p>Sentiment : {{ mention.sentiment }}</p>
+    <p>Source : {{ mention.source }}</p>
+    <p>Lien : <a href="{{ mention.lien }}">{{ mention.lien }}</a></p>
+    <p>Utilisateur : {{ mention.utilisateur }}</p>
+</body>
+</html>
