@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\vynal_backend",
+    "\\vynal_backend\\mentions",
+    "\\vynal_backend\\mentions\\templates",
+    "\\vynal_backend\\mentions\\templates\\mentions",
+    "\\vynal_backend\\template",
+    "\\vynal_backend\\template\\mentions",
+    "\\vynal_backend\\vynal_backend",
+    "\\vynal_frontend"
+  ],
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\vynal-web",
+    "\\vynal-web\\vynal_backend",
+    "\\vynal-web\\vynal_backend\\mentions",
+    "\\vynal-web\\vynal_backend\\mentions\\templates",
+    "\\vynal-web\\vynal_backend\\mentions\\templates\\mentions",
+    "\\vynal-web\\vynal_backend\\mentions\\__pycache__",
+    "\\vynal-web\\vynal_backend\\template",
+    "\\vynal-web\\vynal_backend\\template\\mentions",
+    "\\vynal-web\\vynal_backend\\vynal_backend"
+  ],
+  "PreviewInSolutionExplorer": false
+}
